@@ -11,6 +11,8 @@ import Header from './Header'
 import Teachers from './Teachers'
 import Courses from './Courses'
 import NotFound from './NotFound'
+import Featured from './Featured'
+
 const App = () => (
   <BrowserRouter>
     <div className="container">
@@ -18,8 +20,9 @@ const App = () => (
       <Switch>
         <Route exact path='/' component={Home}></Route>
         <Route path='/about' component={About}></Route>
-        <Route path='/teachers' component={Teachers}></Route>
+        <Route exact path='/teachers' component={Teachers}></Route>
         <Route path='/courses' component={Courses}></Route>
+        <Route path='/teachers/:topic/:fname-:lname' component={Featured}></Route>
         <Route component={NotFound}></Route>
       </Switch>
     </div>
