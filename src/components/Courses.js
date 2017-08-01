@@ -1,5 +1,5 @@
 import React from 'react';
-import {Link, Route,NavLink, Redirect } from 'react-router-dom'
+import { Route,NavLink, Redirect } from 'react-router-dom'
 
 import JavaScript from './courses/JavaScript';
 import CSS from './courses/CSS'
